@@ -6,10 +6,12 @@ const Counter = () => {
     //const [superman, supermancount] = useState(Hey EverOne)
     return (
         <>
-        <div> Rating Star - {batman} </div>
-        <button onClick={() => batmancount(100)}> RESET  </button>   
-        <button onClick={() => batmancount(batman + 5)}> + Star  </button>
-        <button onClick={() => batmancount(batman - 5)}> - Star  </button>
+        <div className="text-center mt-10 p-5  font-bold text-sky-800 font-extrabold text-lg"> Rating Star - {batman} </div>
+        <div className="text-center ">       
+        <button className=" mr-10 p-2  rounded font-bold bg-blue-300  text-base " onClick={() => batmancount(100)}> RESET  </button>   
+        <button className="  p-2  rounded font-bold bg-blue-300  text-base " onClick={() => batmancount(batman + 5)}> + Star  </button>
+        <button className="ml-10  p-2  rounded font-bold bg-blue-300  text-base " onClick={() => batmancount(batman - 5)}> - Star  </button>
+        </div>
 
         {/* <div> Greetings - {superman} </div>
         <button onClick={() => supermancount(HIII..........  CLICKER ........  )}> hii </button>
