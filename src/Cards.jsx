@@ -1,10 +1,10 @@
-function Card(props){
+function Cards({details}){
     return(
 
 <div class="ml-32 mt-5" style= {{width:"15rem"}}>
-  <img src={props.link} class="w-48" alt="..."/>
+  <img src={details.picture?.medium} class="w-48" alt="..."/>
   <div class="card-body">
-    <h5 class="font-bold ml-20">{props.head}</h5>
+    <h5 class="font-bold ml-10">{details.name?.first} - {details.phone}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   <ul class="list-group list-group-flush">
@@ -19,4 +19,4 @@ function Card(props){
 </div>
 )
 }
-export default Card
+export default Cards
