@@ -4,7 +4,7 @@ function Navbar(props){
   <div class="container-fluid">
     <a class="bg-white p-1 rounded"  href="#">{props.head}</a>
     <button class="ml-20">
-      <span class="font-bold  bg-gray-500 text-red-200 p-2 rounded"> I am Button => </span>
+      <span class="font-bold  bg-gray-500 text-red-200 p-2 rounded"> I am Button ={">"} </span>
     </button>
     
     <div class="flex mt-4  " id="navbarNav">
